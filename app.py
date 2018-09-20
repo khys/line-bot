@@ -51,8 +51,9 @@ def message_text(event):
 
 
 if __name__ == "__main__":
+    host = '0.0.0.0'
     port = int(os.getenv('PORT', 8000))
-    app.run(port=port)
+    app.run(host=host, port=port)
 
     # arg_parser = ArgumentParser(
     #     usage='Usage: python ' + __file__ + ' [--port <port>] [--help]'
